@@ -1,0 +1,478 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Bootstrap CSS -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+    <!-- Brand/logo -->
+    <a class="navbar-brand" href="#">
+      <img src="images/logo-gallery.png" class="rounded-circle" alt="logo" style="width:40px;">
+    </a>
+    <!-- links -->
+    <a class="navbar-brand" href="#">Home</a>
+    <ul class="navbar-nav">
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="#">Flower</a>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">AboutUS</a>
+      </li>
+
+      <!-- Dropdown for Materials -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Materials
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Ceramic</a>
+          <a class="dropdown-item" href="#">Crystal</a>
+          <a class="dropdown-item" href="#">Wood</a>
+        </div>
+      </li>
+      <!-- Dropdown for shapes -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Shapes
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Cylinder</a>
+          <a class="dropdown-item" href="#">Bowl</a>
+          <a class="dropdown-item" href="#">Bud</a>
+          <a class="dropdown-item" href="#">Mason Jar</a>
+          <a class="dropdown-item" href="#">Bouquet</a>
+        </div>
+      </li>
+    </ul>
+        <!-- Navbar text-->
+      <span class="navbar-text">
+        Finding...
+      </span>
+      <!-- spinner -->
+      <div class="container">
+        <div class="spinner-border text-success"></div>
+      </div>
+
+      <div class="seach" style="text-align:center">
+        <form class="form-inline" action="">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
+  </nav>
+
+<!-- content display -->
+
+<div class="container my-3">
+
+<hr class="mt-5">
+
+<p>Sponsored Images |Stock <a target="_blank" href="">Download</a> - HD images are available here</p>
+
+<a class="btn btn-success me-2" target="_blank" href="signup.html" role="button">SignUP</a>
+<a class="btn btn-primary me-2" target="_blank" href="https://www.linkedin.com/in/jeyanthiran/" role="button">LinkedIn</a>
+<a class="btn btn-dark me-2" target="_blank" href="https://github.com/Jeyanthiran97" role="button">GitHub <i class="fa fa-github ms-2"></i></a>
+
+<hr class="mb-5"/>
+
+  <!--Carousel Wrapper-->
+  <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-2" data-slide-to="1"></li>
+      <li data-target="#carousel-example-2" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <div class="view">
+          <img class="d-block w-100" src="images/img-bg-01.jpg" alt="First slide">
+          <div class="mask rgba-black-light"></div>
+        </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive">Light mask</h3>
+          <p>First text</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!--Mask color-->
+        <div class="view">
+          <img class="d-block w-100" src="images/img-bg-02.jpg" alt="Second slide">
+          <div class="mask rgba-black-strong"></div>
+        </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive">Strong mask</h3>
+          <p>Secondary text</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!--Mask color-->
+        <div class="view">
+          <img class="d-block w-100" src="images/img-bg-03.jpg" alt="Third slide">
+          <div class="mask rgba-black-slight"></div>
+        </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive">Slight mask</h3>
+          <p>Third text</p>
+        </div>
+      </div>
+    </div>
+    <!--/.Slides-->
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+  </div>
+  <!--/.Carousel Wrapper-->
+</div>
+
+
+
+
+<section class="gallery-block cards-gallery">
+ <div class="container">
+   <div class="heading">
+     <h2>all flower with vase</h2>
+   </div>
+   <!-- 1st row -->
+   <div class="row">
+     <div class="col-md-6 col-lg-4">
+       <div class="card border-0 transform-on-hover">
+         <a class="lightbox" href="images/img-row1-1.png"><img src="images/img-row1-1.png" class="card-img-top"></a>
+         <div class="card-body">
+           <h6>Flower name</h6>
+           <p class="text-muted card-text">Small description about this plant and vase. it's helpful for identifing</p>
+         </div>
+       </div>
+     </div>
+
+     <div class="col-md-6 col-lg-4">
+       <div class="card border-0 transform-on-hover">
+         <a class="lightbox" href="images/img-row1-2.png"><img src="images/img-row1-2.png" class="card-img-top"></a>
+         <div class="card-body">
+           <h6>Flower name</h6>
+           <p class="text-muted card-text">Small description about this plant and vase. it's helpful for identifing</p>
+         </div>
+       </div>
+     </div>
+
+     <div class="col-md-6 col-lg-4">
+       <div class="card border-0 transform-on-hover">
+         <a class="lightbox" href="images/img-row1-3.png"><img src="images/img-row1-3.png" class="card-img-top"></a>
+         <div class="card-body">
+           <h6>Flower name</h6>
+           <p class="text-muted card-text">Small description about this plant and vase. it's helpful for identifing</p>
+         </div>
+       </div>
+     </div>
+   </div>
+
+  <!-- 2nd row -->
+   <div class="row">
+     <div class="col-md-6 col-lg-4">
+       <div class="card border-0 transform-on-hover">
+         <a class="lightbox" href="images/img-row2-1.png"><img src="images/img-row2-1.png" class="card-img-top"></a>
+         <div class="card-body">
+           <h6>Flower name</h6>
+           <p class="text-muted card-text">Small description about this plant and vase. it's helpful for identifing</p>
+         </div>
+       </div>
+     </div>
+
+     <div class="col-md-6 col-lg-4">
+       <div class="card border-0 transform-on-hover">
+         <a class="lightbox" href="images/img-row2-2.png"><img src="images/img-row2-2.png" class="card-img-top"></a>
+         <div class="card-body">
+           <h6>Flower name</h6>
+           <p class="text-muted card-text">Small description about this plant and vase. it's helpful for identifing</p>
+         </div>
+       </div>
+     </div>
+
+     <div class="col-md-6 col-lg-4">
+       <div class="card border-0 transform-on-hover">
+         <a class="lightbox" href="images/img-row2-3.png"><img src="images/img-row2-3.png" class="card-img-top"></a>
+         <div class="card-body">
+           <h6>Flower name</h6>
+           <p class="text-muted card-text">Small description about this plant and vase. it's helpful for identifing</p>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <!-- middle row -->
+    <div class="row">
+      <div class="col-md-6 col-lg-3">
+        <div class="card border-0 transform-on-hover">
+          <a class="lightbox" href="images/img-row5-1.png"><img src="images/img-row5-1.png" class="card-img-top"></a>
+          <div class="card-body">
+            <h6>Flower name</h6>
+            <p class="text-muted card-text">Small description about this plant and vase. it's helpful for identifing</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card border-0 transform-on-hover">
+          <a class="lightbox" href="images/img-row5-2.png"><img src="images/img-row5-2.png" class="card-img-top"></a>
+          <div class="card-body">
+            <h6>Flower name</h6>
+            <p class="text-muted card-text">Small description about this plant and vase. it's helpful for identifing</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card border-0 transform-on-hover">
+          <a class="lightbox" href="images/img-row5-3.png"><img src="images/img-row5-3.png" class="card-img-top"></a>
+          <div class="card-body">
+            <h6>Flower name</h6>
+            <p class="text-muted card-text">Small description about this plant and vase. it's helpful for identifing</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card border-0 transform-on-hover">
+          <a class="lightbox" href="images/img-row5-4.png"><img src="images/img-row5-4.png" class="card-img-top"></a>
+          <div class="card-body">
+            <h6>Flower name</h6>
+            <p class="text-muted card-text">Small description about this plant and vase. it's helpful for identifing</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- 3rd row -->
+   <div class="row">
+     <div class="col-md-6 col-lg-4">
+       <div class="card border-0 transform-on-hover">
+         <a class="lightbox" href="images/img-row3-1.png"><img src="images/img-row3-1.png" class="card-img-top"></a>
+         <div class="card-body">
+           <h6>Flower name</h6>
+           <p class="text-muted card-text">Small description about this plant and vase. it's helpful for identifing</p>
+         </div>
+       </div>
+     </div>
+
+     <div class="col-md-6 col-lg-4">
+       <div class="card border-0 transform-on-hover">
+         <a class="lightbox" href="images/img-row3-2.png"><img src="images/img-row3-2.png" class="card-img-top"></a>
+         <div class="card-body">
+           <h6>Flower name</h6>
+           <p class="text-muted card-text">Small description about this plant and vase. it's helpful for identifing</p>
+         </div>
+       </div>
+     </div>
+
+     <div class="col-md-6 col-lg-4">
+       <div class="card border-0 transform-on-hover">
+         <a class="lightbox" href="images/img-row3-3.png"><img src="images/img-row3-3.png" class="card-img-top"></a>
+         <div class="card-body">
+           <h6>Flower name</h6>
+           <p class="text-muted card-text">Small description about this plant and vase. it's helpful for identifing</p>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <!-- 4th row -->
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <div class="card border-0 transform-on-hover">
+          <a class="lightbox" href="images/img-row4-1.png"><img src="images/img-row4-1.png" class="card-img-top"></a>
+          <div class="card-body">
+            <h6>Flower name</h6>
+            <p class="text-muted card-text">Small description about this plant and vase. it's helpful for identifing</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card border-0 transform-on-hover">
+          <a class="lightbox" href="images/img-row4-2.png"><img src="images/img-row4-2.png" class="card-img-top"></a>
+          <div class="card-body">
+            <h6>Flower name</h6>
+            <p class="text-muted card-text">Small description about this plant and vase. it's helpful for identifing</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card border-0 transform-on-hover">
+          <a class="lightbox" href="images/img-row4-3.png"><img src="images/img-row4-3.png" class="card-img-top"></a>
+          <div class="card-body">
+            <h6>Flower name</h6>
+            <p class="text-muted card-text">Small description about this plant and vase. it's helpful for identifing</p>
+          </div>
+        </div>
+      </div>
+    </div>
+ </div>
+ <!-- last row -->
+ <div class="row">
+   <div class="col-md-6 col-lg-3">
+     <div class="card border-0 transform-on-hover">
+       <a class="lightbox" href="images/img-row6-1.png"><img src="images/img-row6-1.png" class="card-img-top"></a>
+       <div class="card-body">
+         <h6>Flower name</h6>
+         <p class="text-muted card-text">Small description about this plant and vase. it's helpful for identifing</p>
+       </div>
+     </div>
+   </div>
+
+   <div class="col-md-6 col-lg-3">
+     <div class="card border-0 transform-on-hover">
+       <a class="lightbox" href="images/img-row6-2.png"><img src="images/img-row6-2.png" class="card-img-top"></a>
+       <div class="card-body">
+         <h6>Flower name</h6>
+         <p class="text-muted card-text">Small description about this plant and vase. it's helpful for identifing</p>
+       </div>
+     </div>
+   </div>
+
+   <div class="col-md-6 col-lg-3">
+     <div class="card border-0 transform-on-hover">
+       <a class="lightbox" href="images/img-row6-3.png"><img src="images/img-row6-3.png" class="card-img-top"></a>
+       <div class="card-body">
+         <h6>Flower name</h6>
+         <p class="text-muted card-text">Small description about this plant and vase. it's helpful for identifing</p>
+       </div>
+     </div>
+   </div>
+
+   <div class="col-md-6 col-lg-3">
+     <div class="card border-0 transform-on-hover">
+       <a class="lightbox" href="images/img-row6-4.png"><img src="images/img-row6-4.png" class="card-img-top"></a>
+       <div class="card-body">
+         <h6>Flower name</h6>
+         <p class="text-muted card-text">Small description about this plant and vase. it's helpful for identifing</p>
+       </div>
+     </div>
+   </div>
+ </div>
+</section>
+
+
+
+
+<!-- footer -->
+<!-- <section class="ftco-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 text-center">
+        <h2>Footer #04</h2>
+      </div>
+    </div>
+  </div>
+</section> -->
+<footer class="footer-04">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+        <h2 class="footer-heading"><a href="#" class="logo">Types of vases</a></h2>
+        <p>Vases form an essential part of home décor. Nestasia has a wide variety of vases available- be it small vases, tall vases, flower vases, ceramic vases, long vases, abstract vases, flat vases, and modern vases.</p>
+        <a href="#">read more <span class="ion-ios-arrow-round-forward"></span></a>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+        <h2 class="footer-heading">About</h2>
+        <ul class="list-unstyled">
+          <li><a href="#" class="py-1 d-block">Our Story</a></li>
+          <li><a href="#" class="py-1 d-block">Blog</a></li>
+          <li><a href="#" class="py-1 d-block">Careers</a></li>
+          <li><a href="#" class="py-1 d-block">Offers</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+        <h2 class="footer-heading">Flower-Vase Types</h2>
+        <div class="tagcloud">
+          <a href="#" class="tag-cloud-link">Milk Bottle</a>
+          <a href="#" class="tag-cloud-link">Rustic Vase</a>
+          <a href="#" class="tag-cloud-link">Cylinder Vase</a>
+          <a href="#" class="tag-cloud-link">Bouquest Vasr</a>
+          <a href="#" class="tag-cloud-link">Square vase</a>
+          <a href="#" class="tag-cloud-link">Ceramic Vase</a>
+          <a href="#" class="tag-cloud-link">Bed Vase</a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+        <h2 class="footer-heading">Subcribe</h2>
+        <form action="#" class="subscribe-form">
+          <div class="form-group d-flex">
+            <input type="text" class="form-control rounded-left" placeholder="Enter email address">
+            <button type="submit" class="form-control submit rounded-right"><span class="sr-only">Submit</span><i class="ion-ios-send"></i></button>
+          </div>
+        </form>
+        <h2 class="footer-heading mt-5">Follow me</h2>
+        <ul class="ftco-footer-social p-0">
+          <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="ion-logo-twitter"></span></a></li>
+          <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="ion-logo-facebook"></span></a></li>
+          <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="ion-logo-instagram"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="w-100 mt-5 border-top py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-8">
+
+          <p class="copyright">
+            Copyright | Jeyanthiran</p></div>
+        <div class="col-md-6 col-lg-4 text-md-right">
+          <p class="mb-0 list-unstyled">
+            <a class="mr-md-3" href="#">Terms</a>
+            <a class="mr-md-3" href="#">Privacy</a>
+            <a class="mr-md-3" href="#">Compliances</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.cards-gallery', {animation: 'slideIn'});
+</script>
+
+<!-- Logo fixed -->
+<!-- <div style='position:fixed;top:3em;left:-5em;
+            background:transform ;width:10%;'>
+    <img src="images/logo-gallery.gif"></a><br/>
+<div> -->
+
+
+</body>
+</html>
+​
